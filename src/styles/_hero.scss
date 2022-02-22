@@ -1,0 +1,17 @@
+// need to get image on left side, Title and link on right
+
+.hero-card {
+    display: flex;
+    border: em(2) solid black;
+    margin: 0 em(12);
+
+    .article-info {
+        padding: em(10);
+    }
+
+    figure {
+        padding: 0;
+        margin: 0;
+        max-width: 65%;
+    }
+}

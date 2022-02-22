@@ -1,0 +1,88 @@
+nav {
+    display: none;
+    background-color: $headerBackground;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    a {
+        display: block;
+            text-decoration: none;
+            line-height: em(40);
+            color: black;
+            font-weight: bold;
+            padding: 0 em(5);
+    }
+
+    @include mq($desktop) {
+        display: flex;
+
+        .primary-menu a {
+            margin-top: em(10);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+        li {
+            flex: 1;
+            background-color: $headerBackground;
+    
+            &:last-child {
+                margin-right: em(60);
+            }
+        }
+        a {
+            display: block;
+            text-decoration: none;
+            line-height: em(40);
+            color: $headerTextColor;
+            font-weight: bold;
+        }
+    
+        .secondary-menu {
+            display: none;
+
+            a {
+                background-color: white;
+                color: black;
+                margin: auto;
+            }
+
+            .show & {
+                display: flex;
+                position: absolute;
+                top: 48px;
+                right: 10px;
+                border: 5px solid black;
+                flex-direction: column;
+            }
+        }      
+    }
+    
+    .show & {
+        display: flex;
+        position: absolute;
+        top: 48px;
+        right: 10px;
+        background-color: white;
+        border: 5px solid black;
+
+        
+
+        @include mq($desktop){
+            position: static;
+            border: none;
+            background-color: $headerBackground;
+        }
+    }
+}

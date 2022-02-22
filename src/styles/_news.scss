@@ -1,0 +1,55 @@
+.news-container {
+    padding: em(12);
+
+    @include mq($tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: em(14);
+    }
+
+    @include mq($desktop) {
+        padding: em(20);
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: em(18);
+    }
+}
+
+.article-card {
+    border: em(2) solid lightgrey;
+    display: flex;
+    height: 250px;
+    margin: em(12) 0;
+
+    h2 {
+        font-size: em(20);
+    }
+
+    p {
+        font-size: em(14)
+    }
+
+    .article-pic {
+        margin: 0;
+        flex: 0 0 250px;
+
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    .article-info {
+        padding: 0 10px 10px;
+    }
+
+    @include mq($tablet) {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+
+}

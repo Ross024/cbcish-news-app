@@ -1,0 +1,22 @@
+// Main Styles
+
+// @import a font family here (Roboto, Sarabun?)
+
+// Utilities
+@import './variables';
+@import './mixins';
+@import './functions';
+
+// Resets
+@import './reset';
+@import './type';
+
+// Components
+@import 'body';
+@import 'wrapper';
+@import 'header';
+@import 'hero';
+@import 'nav';
+@import 'news';
+@import 'footer';
+@import 'menubutton';

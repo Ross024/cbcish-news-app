@@ -1,0 +1,19 @@
+.button {
+    margin: auto em(12);
+    height: em(40);
+    width: em(120);
+    font-weight: bold;
+}
+
+.more {
+    display: none;
+}
+
+@include mq($desktop) {
+    .text {
+        display: none;
+    }
+    .more {
+        display: block;
+    }
+}
