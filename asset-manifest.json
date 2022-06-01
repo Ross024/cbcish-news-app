@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cbcish-news-app/static/css/main.b9d25828.css",
+    "main.js": "/cbcish-news-app/static/js/main.42074ae7.js",
+    "index.html": "/cbcish-news-app/index.html",
+    "main.b9d25828.css.map": "/cbcish-news-app/static/css/main.b9d25828.css.map",
+    "main.42074ae7.js.map": "/cbcish-news-app/static/js/main.42074ae7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9d25828.css",
+    "static/js/main.42074ae7.js"
+  ]
+}
